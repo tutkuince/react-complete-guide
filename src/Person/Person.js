@@ -5,7 +5,9 @@ import React from 'react';
 // 2. Class-based Components    => class Cmp extends Component { render () { return <div>some JSX</div> } }
 
 const person = () => {
-    return <p>I'm a Person!</p>
+    return <p>I'm a Person! and I am {Math.floor(Math.random() * 30)} years old!</p>
+    // without curly braces 'Math.floor(Math.random() * 30)' compiles like a text
+    // We need curly braces for dynamic content
 };
 
 export default person;
