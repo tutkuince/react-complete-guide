@@ -9,7 +9,14 @@ const person = (props) => {
     // without curly braces 'Math.floor(Math.random() * 30)' compiles like a text
     // We need curly braces for dynamic content
 
-    return <p>I'm {props.name}! and I am {props.age} years old!</p>
+    // return <p>I'm {props.name}! and I am {props.age} years old!</p>
+
+    return (
+        <div>
+            <p>I'm {props.name}! and I am {props.age} years old!</p>
+            <p>{props.children}</p>
+        </div>
+    )
 };
 
 export default person;
